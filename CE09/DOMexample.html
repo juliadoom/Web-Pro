@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>DOM Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function reason(val) {
+                of (val == "Yes") {
+                    document.getElementbyId("reasonbox").innerHTML = "<textarea name='radioreason'></textarea>";
+                } else {
+                    document.getElementbyId("reasonbox").innerHTML = "";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <form>
+                <input type="radio" name="radiobutton" value="Yes" id="rb1" onchange="reason(this.value)">Yes
+                <input type="radio" name="radiobutton" value="No" id="rb2" onchange="reason(this.value)" checked>No
+                <div id="reasonbox">
+                    
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
